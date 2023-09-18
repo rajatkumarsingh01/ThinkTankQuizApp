@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenbg"
+    tools:context=".activity.LoginIntro">
+
+    <TextView
+        android:id="@+id/subHeader"
+        android:layout_width="241dp"
+        android:layout_height="44dp"
+        android:text="Don't go throgh life \n  Grow throgh Life"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="#151B54"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To ThinkTank Quiz"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/subHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+
+        android:layout_width="250dp"
+        android:layout_height="240dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcomePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/quizqwelcome"
+        android:contentDescription="TODO" />
+
+    <Button
+        android:id="@+id/btnGetstarted"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttondesign"
+        android:text="Get Started"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:backgroundTint="#FFA500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/subHeader"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/subHeader"
+
+        app:layout_constraintTop_toBottomOf="@+id/subHeader"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <ImageView
+
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wave__2_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetstarted"
+        app:layout_constraintVertical_bias="1.0"
+        android:contentDescription="imageres" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
